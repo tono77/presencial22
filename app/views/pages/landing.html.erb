@@ -1,0 +1,27 @@
+<h1>Pages#landing</h1>
+<p>Find me in app/views/pages/landing.html.erb</p>
+<table class="table table-striped table-hover table-bordered">
+	<thead class="thead-dark">
+  	<tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+      
+  <tbody>
+		<% @students.each do |st| %>
+			<tr>
+				<td>
+					<%= st[:name] %>
+				</td>
+				<td>
+					<%= st[:age] %>
+				</td>
+				<td>
+					<%= st[:email] %>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
